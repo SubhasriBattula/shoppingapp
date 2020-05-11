@@ -89,5 +89,6 @@ func DeleteProduct(product map[string]interface{}) {
 	}
 }
 func Print(product map[string]interface{}) {
+	fmt.Println("............The items present in the list............")
 	fmt.Println(product)
 }
