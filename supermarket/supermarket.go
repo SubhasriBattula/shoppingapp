@@ -80,11 +80,12 @@ func DeleteProduct(product map[string]interface{}) {
 		fmt.Println("Enter a item to delete:")
 		var item string
 		fmt.Scan(&item)
-
-		delete(product, item)
-		fmt.Printf("The item %v is deleted successfully\n", item)
-		fmt.Println(product)
-		break
+		if _, ok := product[item]; ok {
+			delete(product, item)
+			fmt.Printf("The item %v is deleted successfully\n", item)
+			fmt.Println(product)
+			break
+		}
 	}
 }
 func Print(product map[string]interface{}) {

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/shoppingapp/supermarket"
+	"github.com/SubhasriBattula/shoppingapp/supermarket"
 )
 
 func main() {
