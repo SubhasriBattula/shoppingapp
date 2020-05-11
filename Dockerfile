@@ -2,6 +2,6 @@ FROM golang:latest
 # create a working directory
 WORKDIR /go/src/app
 # add source code
-ADD src src
+ADD main.go main.go
 # run main.go
-CMD ["go", "run", "src/main.go"]
+CMD ["go", "run", "main.go"]
