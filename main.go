@@ -12,7 +12,7 @@ func main() {
 	product["eggs"] = 60.90
 	product["milk"] = 90.90
 
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 20; i++ {
 		fmt.Println("enter the action to perform:")
 		var i string
 		fmt.Scan(&i)
